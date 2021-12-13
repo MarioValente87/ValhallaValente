@@ -260,6 +260,13 @@ color:rgba(109, 102, 102, 0.74);
         transform: scale(1);
         }
 
+        @media (max-width:492px) {
+            .form__title {
+                font-size: 1.2rem;
+            }
+        }
+
+
 /* UBICACION */
 .container__ubicacion {
     max-width: 500px;
