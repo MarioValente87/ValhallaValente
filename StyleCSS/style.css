@@ -581,11 +581,17 @@ margin-bottom: 10px;
     justify-content: center;
     align-content: center;
     align-items: center;
+    background-color: linen;
     
 }
 
 .footer5 {
     grid-area: footer;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* NAV */
@@ -607,8 +613,6 @@ margin-bottom: 10px;
     border-collapse: collapse;
     border-radius: 2px;
     
-    
-
 }
 
 .tabla td {
@@ -632,3 +636,6 @@ tr:nth-child(even) {
     background-color: lightslategray;
 }
 
+.footer5 p {
+    color: white;
+}
