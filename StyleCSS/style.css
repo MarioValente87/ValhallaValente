@@ -576,7 +576,12 @@ margin-bottom: 10px;
 
 .tablahyp {
     grid-area: tabla;
-    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    
 }
 
 .footer5 {
@@ -593,3 +598,37 @@ margin-bottom: 10px;
     color: white;
     font-size: larger;
 }
+
+/* TABLA */
+
+.tabla {
+    border: 5px solid black;
+    margin: 10px;
+    border-collapse: collapse;
+    border-radius: 2px;
+    
+    
+
+}
+
+.tabla td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.tabla th {
+    padding: 8px;
+}
+
+.tabla tr:hover td {
+    background: dimgray;
+}
+
+tr:nth-child(even) {
+    background-color:#ddd;
+}
+
+.tabla th {
+    background-color: lightslategray;
+}
+
