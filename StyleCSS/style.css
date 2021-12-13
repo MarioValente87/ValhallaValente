@@ -539,13 +539,13 @@ margin-bottom: 10px;
     background-color: black;
 
 }
-
-/* FOOTER */
-
 .grid__nav4 li a {
     color: white;
     font-size: larger;
 }
+/* FOOTER */
+
+
 
 .footer4 p {
     color: white;
@@ -570,6 +570,8 @@ margin-bottom: 10px;
 
 .grid__nav5 {
     grid-area: nav;
+    background-color:#3c3c3c;
+
 }
 
 .tablahyp {
@@ -579,3 +581,14 @@ margin-bottom: 10px;
 .footer5 {
     grid-area: footer;
 }
+
+/* NAV */
+
+.grid__nav5 li a:hover {
+    background-color: black;
+
+}
+.grid__nav5 li a {
+    color: white;
+    font-size: larger;
+ }
