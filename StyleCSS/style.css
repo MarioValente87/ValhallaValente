@@ -99,7 +99,16 @@ div.container__imagen img {
 }
 
 /* BARRA DE NAVEGACIÓN */
-/* agregar efecto hoover */
+
+.grid__nav li a:hover {
+    background-color: black;
+
+}
+
+.grid__nav li a {
+    color: white;
+    font-size: larger;
+}
 
 
 
