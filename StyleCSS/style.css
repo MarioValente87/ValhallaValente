@@ -1,0 +1,535 @@
+.layout {
+    display: grid;
+    width: 100%;
+    /* grid-template-rows: 1fr auto; */
+    grid-template-areas: 
+    "header header  header header"
+    "nav nav nav nav"
+    "slider slider slider slider"
+    "main main main main"
+    "contacto contacto ubicacion ubicacion"
+    "contacto contacto ubicacion ubicacion"
+    "footer footer footer footer"
+    ;
+}
+
+@media screen and (max-width: 492px) {
+    .layout { 
+    grid-template-areas: 
+    "header header  header header"
+    "nav nav nav nav"
+    "slider slider slider slider"
+    "main main main main"
+    "contacto contacto contacto contacto"
+    "ubicacion ubicacion ubicacion ubicacion"
+    "footer footer footer footer"
+    ;   
+}
+
+
+.grid__header {
+    grid-area: header;
+    background-color: royalblue; 
+}
+}
+
+.grid__header {
+    grid-area: header;
+    background-color: black;
+
+
+}
+
+.grid__nav {
+background-color:#3c3c3c;
+grid-area: nav;
+width: 100%;
+
+}
+
+.grid__slider {
+    background-color: chartreuse;
+    grid-area: slider;
+}
+
+.grid__main {
+    background-color: cyan;
+    grid-area: main;
+}
+
+.grid__contacto {
+grid-area: contacto;
+background-color: #e5e5f7;
+opacity: 0.9;
+background-image:  radial-gradient(#b8b9d1 0.5px, transparent 0.5px), radial-gradient(#b8b9d1 0.5px, #e5e5f7 0.5px);
+display: flex;
+
+}
+
+.grid__ubicacion {
+    background-color:chocolate;
+    grid-area: ubicacion;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e5e5f7;
+opacity: 0.8;
+background-image:  radial-gradient(#61626c 0.5px, transparent 0.5px), radial-gradient(#61626c 0.5px, #e5e5f7 0.5px);
+
+}
+
+.grid__footer {
+    grid-area: footer;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ENCABEZADO */
+
+div.container__imagen {
+    display: flex;
+    justify-content: center;
+}
+
+div.container__imagen img {
+    width: 15%;
+}
+
+/* BARRA DE NAVEGACIÓN */
+/* agregar efecto hoover */
+
+
+
+/* MAIN ACTIVIDADES */
+
+.container__actividades {
+    border: 4px solid rgb(3, 31, 22);
+    display: flex;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 492px) {
+    .container__actividades {
+        border: 4px solid rgb(3, 31, 22);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        ;
+}
+
+}
+
+/* MMA */
+.container__mma {
+    border: 2px solid red;
+    width: 90%;
+    margin: 1em;
+}
+
+.container__mma--img img {
+border-radius: 2em;
+}
+
+/* Jiujitsu */
+.container__jiujitsu {
+    border: 2px solid blue;
+    width: 90%;
+    margin: 1em;
+}
+
+.container__jiujitsu--img img {
+    
+    border-radius: 2em ;
+    width: 100%;
+}
+
+/* KICKBOXING */
+
+.container__kickboxing {
+    border: 2px solid cadetblue;
+    width: 90%;
+    margin: 1em;
+}
+
+.container__kickboxing--img img {
+    border-radius: 2em ;
+    width: 100%;
+}
+
+/* FUNCIONAL */
+
+.container__funcional {
+    border: 2px solid rgb(203, 24, 209);
+    width: 90%;
+    margin: 1em;
+}
+
+.container__funcional--img img {
+    border-radius: 2em ;
+    width: 100%;
+}
+
+.container__img--texto h2 {
+    font-size: medium;
+}
+
+/* FORMULARIO DE CONTACTO */
+
+div.marco__form {
+    width: 90%;
+    max-width: 400px;
+    margin: 1em auto;
+    padding: 4.5em 3em;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 5px 5px 10px black;
+    text-align: center;
+}
+
+.form__title {
+    font-size: 2rem;
+    margin-bottom: .05em;
+}
+
+.form__paragraph {
+    font-weight: 450;
+}
+
+.form__container {
+display: grid;
+gap: 1em;
+}
+
+.form__group {
+position: relative;
+color:rgba(109, 102, 102, 0.74);
+}
+
+.form__imput {
+    width: 100%;
+    background: none;
+    color: black;
+    font-size: 1rem;
+    padding: .6em.3em;
+    border: none;
+    outline: none;
+}
+/* falta más */
+
+
+/* UBICACION */
+.container__ubicacion {
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+    font-weight: 500;
+    border: 2px solid red;
+    
+}
+
+.container__ubicacion--mapa {
+width: 100%;
+
+}
+
+/* FOOTER */
+
+.footer__socialicons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.footer__socialicons li {
+    list-style: none;
+}
+
+.footer__socialicons li a {
+
+    font-size: 2em;
+    color: white;
+    margin: 0 15px;
+    display: inline-block;
+}
+
+.footer__socialicons li a:hover {
+    transform: translateY(-10px);
+}
+
+.grid__footer p {
+    color: white;
+}
+
+/* SECCION DISCIPLINAS */
+/* LAYOUT CON GRID AREAS */
+
+.layout__disciplinas {
+    display: grid;
+    grid-template-areas:
+    "header header header header"
+    "nav nav nav nav"
+    "section1 section1 section1 section1"
+    "section2 section2 section2 section2"
+    "section3 section3 section3 section3"
+    "section4 section4 section4 section4"
+    "footer footer footer footer"
+}
+
+
+.grid__header2 {
+    grid-area: header;
+    background-color: black;
+}
+
+.grid__nav2 {
+    grid-area:nav;
+    background-color:#3c3c3c;
+}
+
+.seccion1 {
+    grid-area: section1;
+    display: flex;
+    padding: 5px 5px;
+    
+}
+
+.seccion2 {
+    grid-area: section2;
+    display: flex;
+    padding: 5px 5px;
+}
+
+.seccion3 {
+    grid-area: section3;
+    display: flex;
+    padding: 5px 5px;
+}
+
+.seccion4 {
+    grid-area: section4;
+    display: flex;
+    padding: 5px 5px;
+}
+
+.footer2 {
+    grid-area: footer;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* BARRA DE NAVEGACIÓN */
+
+.grid__nav2 li a:hover {
+    background-color: black;
+
+}
+
+.grid__nav2 li a {
+    color: white;
+    font-size: larger;
+}
+
+/* DISCIPLINAS: SECCION 1 */
+/* MOBILE */
+@media screen and (max-width: 764px) {
+    .seccion1, .seccion2, .seccion3, .seccion4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    }
+    .container__texto {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .container__imagen2 {
+    text-align: center;
+    } 
+
+.container__imagen2 img {
+width: 90%;
+max-width: 400px;
+margin-bottom: 10px;
+
+
+}
+
+.container__texto {
+    width: 90%;
+}
+}
+
+/* fin mobile */
+
+.container__imagen2 {
+    margin: 0 50x;
+    justify-content: baseline;
+    }
+
+.container__imagen2 img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.container__texto {
+    margin: 0 20px;
+    text-align: center;
+}
+
+/* FOOTER */
+
+
+.footer2 p {
+    color: white;
+}
+
+
+/* SECCION FOTOS */
+/* LAYOUT CON GRID AREAS */
+
+.layout__fotos {
+    display: grid;
+    grid-template-areas: 
+    "header header header header"
+    "nav nav nav nav"
+    "main main main main"
+    "footer footer footer footer";
+}
+
+.grid__header3 {
+    grid-area: header;
+    background-color: black;
+}
+
+.grid__nav3 {
+    grid-area: nav;
+    background-color:#3c3c3c;
+}
+
+.grid__slider3 {
+    grid-area: main;
+    background-color: palegreen;
+}
+
+.footer3 {
+    grid-area: footer;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* BARRA DE NAVEGACIÓN */
+
+.grid__nav3 li a:hover {
+    background-color: black;
+
+}
+
+.grid__nav3 li a {
+    color: white;
+    font-size: larger;
+}
+
+/* MODIFICANDO TAMAÑO IMAGENES EN EL CARROUSEL DE BOOTSTRAP */
+
+/* para despues */
+
+.footer3 p {
+    color: white;
+}
+
+/* ACERCA DE NOSOTROS */
+
+.layout__nosotros {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "main main main"
+    "footer footer footer";
+}
+
+.grid__header4 {
+    grid-area: header;
+    background-color: black;
+
+}
+
+.grid__nav4 {
+    grid-area: nav;
+    background-color:#3c3c3c;
+}
+
+.grid__main4 {
+    grid-area: main;
+    display: flex;
+    padding: 5px 5px;
+}
+
+.footer4 {
+    grid-area: footer;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* BARRA DE NAVEGACIÓN */
+
+.grid__nav4 li a:hover {
+    background-color: black;
+
+}
+
+/* FOOTER */
+
+.grid__nav4 li a {
+    color: white;
+    font-size: larger;
+}
+
+.footer4 p {
+    color: white;
+}
+
+
+/* HORARIOS Y PRECIOS */
+
+.layout__hyp {
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "nav nav nav"
+    "tabla tabla tabla"
+    "footer footer footer" ;
+}
+
+.grid__header5 {
+    grid-area: header;
+    background-color: black;
+}
+
+.grid__nav5 {
+    grid-area: nav;
+}
+
+.tablahyp {
+    grid-area: tabla;
+}
+
+.footer5 {
+    grid-area: footer;
+}
