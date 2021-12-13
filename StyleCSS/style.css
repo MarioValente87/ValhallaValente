@@ -576,6 +576,7 @@ margin-bottom: 10px;
 
 .tablahyp {
     grid-area: tabla;
+    background-color: aquamarine;
 }
 
 .footer5 {
@@ -591,4 +592,4 @@ margin-bottom: 10px;
 .grid__nav5 li a {
     color: white;
     font-size: larger;
- }
+}
