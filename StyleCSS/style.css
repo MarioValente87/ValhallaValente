@@ -115,14 +115,12 @@ div.container__imagen img {
 /* MAIN ACTIVIDADES */
 
 .container__actividades {
-    border: 4px solid rgb(3, 31, 22);
     display: flex;
     justify-content: space-around;
 }
 
 @media screen and (max-width: 492px) {
     .container__actividades {
-        border: 4px solid rgb(3, 31, 22);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -133,7 +131,6 @@ div.container__imagen img {
 
 /* MMA */
 .container__mma {
-    border: 2px solid red;
     width: 90%;
     margin: 1em;
 }
@@ -144,7 +141,6 @@ border-radius: 2em;
 
 /* Jiujitsu */
 .container__jiujitsu {
-    border: 2px solid blue;
     width: 90%;
     margin: 1em;
 }
@@ -158,7 +154,6 @@ border-radius: 2em;
 /* KICKBOXING */
 
 .container__kickboxing {
-    border: 2px solid cadetblue;
     width: 90%;
     margin: 1em;
 }
@@ -171,7 +166,6 @@ border-radius: 2em;
 /* FUNCIONAL */
 
 .container__funcional {
-    border: 2px solid rgb(203, 24, 209);
     width: 90%;
     margin: 1em;
 }
@@ -235,7 +229,6 @@ color:rgba(109, 102, 102, 0.74);
     width: 90%;
     text-align: center;
     font-weight: 500;
-    border: 2px solid red;
     
 }
 
