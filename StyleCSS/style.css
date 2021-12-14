@@ -639,3 +639,7 @@ tr:nth-child(even) {
 .footer5 p {
     color: white;
 }
+
+.tablahyp h2 {
+text-decoration: underline;
+}
