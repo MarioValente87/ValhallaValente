@@ -1,6 +1,6 @@
 .layout {
     display: grid;
-    width: 100%;
+    
     /* grid-template-rows: 1fr auto; */
     grid-template-areas: 
     "header header  header header"
@@ -464,7 +464,10 @@ margin-bottom: 10px;
 
 .grid__slider3 {
     grid-area: main;
-    background-color: palegreen;
+    display: flex;
+    justify-content: center;
+    background-image: url(https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_1920/https://guiaarquitectura.com/wp-content/uploads/2018/12/reja-de-acero-min.jpg);
+    border-radius: 10px;
 }
 
 .footer3 {
@@ -488,9 +491,13 @@ margin-bottom: 10px;
     font-size: larger;
 }
 
-/* MODIFICANDO TAMAÑO IMAGENES EN EL CARROUSEL DE BOOTSTRAP */
+/* TAMAÑO DEL SLIDER */
+/* las imágenes tienen que tener el mismo tamaño sino se desacomoda */
 
-/* para despues */
+.slide {
+    width: 100vh;
+    ;
+}
 
 .footer3 p {
     color: white;
@@ -583,6 +590,8 @@ margin-bottom: 10px;
     align-items: center;
     background-color: linen;
     
+
+    
 }
 
 .footer5 {
@@ -606,8 +615,8 @@ margin-bottom: 10px;
 }
 
 /* TABLA */
-
-.tabla {
+/* MODIFICADA CON BOOTSTRAP */
+/* .tabla {
     border: 5px solid black;
     margin: 10px;
     border-collapse: collapse;
@@ -634,12 +643,13 @@ tr:nth-child(even) {
 
 .tabla th {
     background-color: lightslategray;
-}
+}*/
 
 .footer5 p {
     color: white;
-}
+}  
 
 .tablahyp h2 {
 text-decoration: underline;
 }
+
