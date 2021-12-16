@@ -48,8 +48,10 @@ width: 100%;
 }
 
 .grid__slider {
-    background-color: chartreuse;
+    background-color: rgb(218, 222, 226);
     grid-area: slider;
+    display: flex;
+    justify-content: center;
 }
 
 .grid__main {
@@ -497,6 +499,10 @@ margin-bottom: 10px;
 .slide {
     width: 100vh;
     ;
+}
+
+.slide1 {
+    width: 100%;
 }
 
 .footer3 p {
