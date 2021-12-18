@@ -116,70 +116,33 @@ div.container__imagen img {
 
 /* MAIN ACTIVIDADES */
 
-.container__actividades {
-    display: flex;
-    justify-content: space-around;
-}
-
-@media screen and (max-width: 492px) {
-    .container__actividades {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        ;
-}
-
-}
-
-/* MMA */
-.container__mma {
-    width: 90%;
-    margin: 1em;
-}
-
-.container__mma--img img {
-border-radius: 2em;
-}
-
-/* Jiujitsu */
-.container__jiujitsu {
-    width: 90%;
-    margin: 1em;
-}
-
-.container__jiujitsu--img img {
+.desplazamiento1 {
+    animation: slide-in 3s ease;
+    }
     
-    border-radius: 2em ;
-    width: 100%;
-}
-
-/* KICKBOXING */
-
-.container__kickboxing {
-    width: 90%;
-    margin: 1em;
-}
-
-.container__kickboxing--img img {
-    border-radius: 2em ;
-    width: 100%;
-}
-
-/* FUNCIONAL */
-
-.container__funcional {
-    width: 90%;
-    margin: 1em;
-}
-
-.container__funcional--img img {
-    border-radius: 2em ;
-    width: 100%;
-}
-
-.container__img--texto h2 {
-    font-size: medium;
-}
+    @keyframes slide-in {
+        from {
+            transform: translateX(-1000px);
+            opacity: 0.1;
+        }
+        to {
+            transform: translateX(x);
+        }
+    }
+    
+    .desplazamiento2 {
+    animation: slide-in 5s ease;
+    }
+    
+    @keyframes slide-in {
+        from {
+            transform: translateX(-1000px);
+            opacity: 0.1;
+        }
+        to {
+            transform: translateX(x);
+        }
+    }
 
 /* FORMULARIO DE CONTACTO */
 
