@@ -55,7 +55,7 @@ width: 100%;
 }
 
 .grid__main {
-    background-color: cyan;
+    background-color: rgb(208, 219, 219);
     grid-area: main;
 }
 
