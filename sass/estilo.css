@@ -274,4 +274,163 @@
 .grid__footer p {
   color: white;
 }
+
+/* SECCION DISCIPLINAS */
+/* LAYOUT CON GRID AREAS */
+.layout__disciplinas {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "header header header header" "nav nav nav nav" "section1 section1 section1 section1" "section2 section2 section2 section2" "section3 section3 section3 section3" "section4 section4 section4 section4" "footer footer footer footer";
+}
+
+.grid__header2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: header;
+  background-color: black;
+}
+
+.grid__nav2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: nav;
+  background-color: #3c3c3c;
+}
+
+.seccion1 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: section1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px 5px;
+}
+
+.seccion2 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: section2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px 5px;
+}
+
+.seccion3 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: section3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px 5px;
+}
+
+.seccion4 {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: section4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px 5px;
+}
+
+.footer2 {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: footer;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* BARRA DE NAVEGACIÓN */
+.grid__nav2 a {
+  color: white;
+  font-size: larger;
+}
+
+.grid__nav2 a:hover {
+  background-color: black;
+}
+
+/* DISCIPLINAS: SECCION 1 */
+/* MOBILE */
+@media screen and (max-width: 764px) {
+  .seccion1, .seccion2, .seccion3, .seccion4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container__texto {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    width: 90%;
+  }
+  .container__imagen2 {
+    text-align: center;
+  }
+  .container__imagen2 img {
+    width: 90%;
+    max-width: 400px;
+    margin-bottom: 10px;
+  }
+}
+
+/* fin mobile */
+.container__imagen2 {
+  margin: 0 50x;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
+}
+
+.container__imagen2 img {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.container__texto {
+  margin: 0 20px;
+  text-align: center;
+}
+
+.footer2 p {
+  color: white;
+}
 /*# sourceMappingURL=estilo.css.map */
