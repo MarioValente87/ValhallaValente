@@ -1,3 +1,6 @@
+$color-primario: black;
+$color-secundario:#3c3c3c;
+
 .layout {
     display: grid;
     
@@ -28,10 +31,10 @@
 }
 .grid__header {
     grid-area: header;
-    background-color: black;
+    background-color: $color-primario;
 }
 .grid__nav {
-    background-color:#3c3c3c;
+    background-color:$color-secundario;
     grid-area: nav;
     width: 100%;
 }
@@ -53,7 +56,6 @@
     display: flex;
 }
 .grid__ubicacion {
-    background-color:chocolate;
     grid-area: ubicacion;
     display: flex;
     justify-content: center;
@@ -90,7 +92,7 @@ background-image:  radial-gradient(#61626c 0.5px, transparent 0.5px), radial-gra
         color: white;
         font-size: larger;
         &:hover {
-            background-color: black;
+            background-color: $color-primario;
         
         }
     }
@@ -110,7 +112,7 @@ background-image:  radial-gradient(#61626c 0.5px, transparent 0.5px), radial-gra
         padding: 4.5em 3em;
         border-radius: 10px;
         background-color: white;
-        box-shadow: 5px 5px 10px black;
+        box-shadow: 5px 5px 10px $color-primario;
         text-align: center;
     }
     &__title {
@@ -131,7 +133,7 @@ background-image:  radial-gradient(#61626c 0.5px, transparent 0.5px), radial-gra
     &__imput {
         width: 100%;
         background: none;
-        color: black;
+        color: $color-primario;
         font-size: 1rem;
         padding: .6em.3em;
         border: none;
@@ -167,7 +169,7 @@ background-image:  radial-gradient(#61626c 0.5px, transparent 0.5px), radial-gra
 .form__imput:focus + .form__label, .form__imput:not(:placeholder-shown) + .form__label  {
     transform: translateY(-12px) scale(.7);
     transform-origin: left top;
-    color: black;
+    color: $color-primario;
     } 
     
     
@@ -240,12 +242,12 @@ font-size: 1.2rem;
 
 .grid__header2 {
     grid-area: header;
-    background-color: black;
+    background-color:$color-primario;
 }
 
 .grid__nav2 {
     grid-area:nav;
-    background-color:#3c3c3c;
+    background-color: $color-secundario;
 }
 
 .seccion1 {
@@ -275,7 +277,7 @@ font-size: 1.2rem;
 
 .footer2 {
     grid-area: footer;
-    background-color: black;
+    background-color: $color-primario;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -291,7 +293,7 @@ font-size: 1.2rem;
         color: white;
         font-size: larger;
         &:hover {
-            background-color: black;
+            background-color: $color-primario;
         
         }
     }
