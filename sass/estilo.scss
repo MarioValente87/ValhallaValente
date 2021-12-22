@@ -1,0 +1,234 @@
+.layout {
+    display: grid;
+    
+    /* grid-template-rows: 1fr auto; */
+    grid-template-areas: 
+    "header header  header header"
+    "nav nav nav nav"
+    "slider slider slider slider"
+    "main main main main"
+    "contacto contacto ubicacion ubicacion"
+    "contacto contacto ubicacion ubicacion"
+    "footer footer footer footer"
+    ;
+}
+
+@media screen and (max-width: 492px) {
+    .layout { 
+    grid-template-areas: 
+    "header header  header header"
+    "nav nav nav nav"
+    "slider slider slider slider"
+    "main main main main"
+    "contacto contacto contacto contacto"
+    "ubicacion ubicacion ubicacion ubicacion"
+    "footer footer footer footer"
+    ;   
+}
+}
+.grid__header {
+    grid-area: header;
+    background-color: black;
+}
+.grid__nav {
+    background-color:#3c3c3c;
+    grid-area: nav;
+    width: 100%;
+}
+.grid__slider {
+    background-color: rgb(218, 222, 226);
+    grid-area: slider;
+    display: flex;
+    justify-content: center;
+}
+.grid__main {
+    background-color: rgb(208, 219, 219);
+    grid-area: main;
+}
+.grid__contacto {
+    grid-area: contacto;
+    background-color: #e5e5f7;
+    opacity: 0.9;
+    background-image:  radial-gradient(#b8b9d1 0.5px, transparent 0.5px), radial-gradient(#b8b9d1 0.5px, #e5e5f7 0.5px);
+    display: flex;
+}
+.grid__ubicacion {
+    background-color:chocolate;
+    grid-area: ubicacion;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e5e5f7;
+opacity: 0.8;
+background-image:  radial-gradient(#61626c 0.5px, transparent 0.5px), radial-gradient(#61626c 0.5px, #e5e5f7 0.5px);
+}
+
+.grid__footer {
+    grid-area: footer;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ENCABEZADO */
+.container {
+    &__imagen {
+        display: flex;
+        justify-content: center;
+        img {
+            width: 15%;
+        }
+    }
+}
+
+/* BARRA DE NAVEGACIÓN */
+
+.grid__nav {
+    a {
+        color: white;
+        font-size: larger;
+        &:hover {
+            background-color: black;
+        
+        }
+    }
+
+}
+/* MAIN ACTIVIDADES */
+
+/* HECHOC CON BOOTSTRAP PERO SE ROMPIO CON SASS */
+
+/* FORMULARIO DE CONTACTO */
+
+.form {
+    &__marco {
+        width: 90%;
+        max-width: 400px;
+        margin: 1em auto;
+        padding: 4.5em 3em;
+        border-radius: 10px;
+        background-color: white;
+        box-shadow: 5px 5px 10px black;
+        text-align: center;
+    }
+    &__title {
+        font-size: 2rem;
+        margin-bottom: .05em;
+    }
+    &__paragraph {
+        font-weight: 450;
+    }
+    &__container {
+        display: grid;
+        gap: 1em;
+    }
+    &__group {
+        position: relative;
+        color:rgba(109, 102, 102, 0.74);
+    }
+    &__imput {
+        width: 100%;
+        background: none;
+        color: black;
+        font-size: 1rem;
+        padding: .6em.3em;
+        border: none;
+        outline: none;
+    }
+    &__label {
+        color: rgba(109, 102, 102, 0.74);
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        left: 5px;
+        transform: translateY(10px);
+        transition:transform .5s, color .3s;
+    }
+    &__submit {
+        border-radius: 10px;
+        border: none;
+    }
+    &__line {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background: gray;
+        transform: scale(o);
+        transform: left bottom;
+        transform: transform .4s;
+        
+    }
+}
+
+.form__imput:focus + .form__label, .form__imput:not(:placeholder-shown) + .form__label  {
+    transform: translateY(-12px) scale(.7);
+    transform-origin: left top;
+    color: black;
+    } 
+    
+    
+    
+.form__imput:focus ~ .form__line, .form__imput:not(:placeholder-shown) ~ .form__line  {
+        transform: scale(1);
+        }
+
+@media (max-width:492px) {
+.form__title {
+font-size: 1.2rem;
+    }
+}
+
+/* UBICACION */
+
+.container {
+    &__ubicacion {
+        max-width: 500px;
+        width: 90%;
+        text-align: center;
+        font-weight: 500;
+        &--mapa {
+            width: 100%;
+            }
+    }
+}
+
+/* FOOTER */
+
+.footer {
+    &__socialicons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0;
+        li {
+            list-style: none;
+            a {
+                font-size: 2em;
+                color: white;
+                margin: 0 15px;
+                display: inline-block;
+                &:hover {
+                    transform: translateY(-10px);
+                }
+            }
+        }
+    }
+}
+
+.grid__footer p {
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
