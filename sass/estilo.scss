@@ -41,8 +41,8 @@ $color-secundario:#3c3c3c;
 .grid__slider {
     background-color: rgb(218, 222, 226);
     grid-area: slider;
-    /* display: flex; */
-    justify-content: center;
+    /* display: flex; */ /* error */
+    /* justify-content: center; */
 }
 .grid__main {
     background-color: rgb(208, 219, 219);
