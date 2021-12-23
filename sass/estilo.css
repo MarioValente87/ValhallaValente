@@ -3,24 +3,12 @@
   display: -ms-grid;
   display: grid;
   /* grid-template-rows: 1fr auto; */
-      grid-template-areas: "header header  header header"
- "nav nav nav nav"
- "slider slider slider slider"
- "main main main main"
- "contacto contacto ubicacion ubicacion"
- "contacto contacto ubicacion ubicacion"
- "footer footer footer footer";
+      grid-template-areas: "header header  header header" "nav nav nav nav" "slider slider slider slider" "main main main main" "contacto contacto ubicacion ubicacion" "contacto contacto ubicacion ubicacion" "footer footer footer footer";
 }
 
 @media screen and (max-width: 492px) {
   .layout {
-        grid-template-areas: "header header  header header"
- "nav nav nav nav"
- "slider slider slider slider"
- "main main main main"
- "contacto contacto contacto contacto"
- "ubicacion ubicacion ubicacion ubicacion"
- "footer footer footer footer";
+        grid-template-areas: "header header  header header" "nav nav nav nav" "slider slider slider slider" "main main main main" "contacto contacto contacto contacto" "ubicacion ubicacion ubicacion ubicacion" "footer footer footer footer";
   }
 }
 
@@ -47,9 +35,7 @@
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
   grid-area: slider;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  /* display: flex; */
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -291,13 +277,7 @@
 .layout__disciplinas {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "header header header header"
- "nav nav nav nav"
- "section1 section1 section1 section1"
- "section2 section2 section2 section2"
- "section3 section3 section3 section3"
- "section4 section4 section4 section4"
- "footer footer footer footer";
+      grid-template-areas: "header header header header" "nav nav nav nav" "section1 section1 section1 section1" "section2 section2 section2 section2" "section3 section3 section3 section3" "section4 section4 section4 section4" "footer footer footer footer";
 }
 
 .grid__header2 {
