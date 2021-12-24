@@ -87,13 +87,13 @@ background-image:  radial-gradient(#61626c 0.5px, transparent 0.5px), radial-gra
     }
 }
 
-@media (max-width:492px) {
+@media (max-width:525px) {
     .container {
         &__imagen {
             display: flex;
             justify-content: center;
             img {
-                width: 35%;
+                width: 50%;
                 height: auto;
             }
         }

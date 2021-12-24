@@ -118,7 +118,7 @@
   height: auto;
 }
 
-@media (max-width: 492px) {
+@media (max-width: 525px) {
   .container__imagen {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -128,7 +128,7 @@
             justify-content: center;
   }
   .container__imagen img {
-    width: 35%;
+    width: 50%;
     height: auto;
   }
 }
