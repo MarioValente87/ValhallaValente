@@ -36,9 +36,8 @@
   -ms-grid-column-span: 4;
   grid-area: slider;
   /* display: flex; */
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  /* error */
+  /* justify-content: center; */
 }
 
 .grid__main {
@@ -115,7 +114,23 @@
 }
 
 .container__imagen img {
-  width: 15%;
+  width: 18%;
+  height: auto;
+}
+
+@media (max-width: 492px) {
+  .container__imagen {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container__imagen img {
+    width: 35%;
+    height: auto;
+  }
 }
 
 /* BARRA DE NAVEGACIÓN */
