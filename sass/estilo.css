@@ -434,9 +434,8 @@
     text-align: center;
   }
   .container__imagen2 img {
-    width: 90%;
-    max-width: 400px;
-    margin-bottom: 10px;
+    max-width: 100%;
+    margin-bottom: 15px;
   }
 }
 
@@ -450,7 +449,7 @@
 
 .container__imagen2 img {
   border-radius: 10px;
-  width: 100%;
+  width: 130rem;
 }
 
 .container__texto {

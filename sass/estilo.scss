@@ -332,9 +332,8 @@ font-size: 1.2rem;
         &__imagen2 {
             text-align: center;
             img {
-                width: 90%;
-                max-width: 400px;
-                margin-bottom: 10px;
+                max-width: 100%;
+                margin-bottom: 15px;
                 }
             } 
     }
@@ -348,7 +347,7 @@ font-size: 1.2rem;
         justify-content: baseline;
         img {
             border-radius: 10px;
-            width: 100%;
+            width: 130rem;
         }
         }
     &__texto {
