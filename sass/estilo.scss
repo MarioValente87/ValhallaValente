@@ -95,7 +95,7 @@ $color-secundario:#3c3c3c;
             display: flex;
             justify-content: center;
             img {
-                width: 50%;
+                max-width: 100%;
                 height: auto;
             }
         }
@@ -121,8 +121,6 @@ $color-secundario:#3c3c3c;
 /* MAIN ACTIVIDADES */
 
 /* HECHOC CON BOOTSTRAP  */
-
-
 
 .carousel {
     background-color: rgb(104, 101, 101);
