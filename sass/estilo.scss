@@ -264,10 +264,18 @@ font-size: 1.2rem;
     background-color: $color-secundario;
 }
 
+@mixin shadow {
+    margin: 1rem 1rem;
+    border-radius: 5px;
+    border: thin solid black;
+    box-shadow: 5px 5px 5px 5px #0005;
+    
+}
 .seccion1 {
     grid-area: section1;
     display: flex;
     padding: 5px 5px;
+    @include shadow;
     
 }
 
@@ -275,18 +283,22 @@ font-size: 1.2rem;
     grid-area: section2;
     display: flex;
     padding: 5px 5px;
+    @include shadow;
 }
 
 .seccion3 {
     grid-area: section3;
     display: flex;
     padding: 5px 5px;
+    @include shadow;
 }
 
 .seccion4 {
     grid-area: section4;
     display: flex;
     padding: 5px 5px;
+    @include shadow;
+
 }
 
 .footer2 {

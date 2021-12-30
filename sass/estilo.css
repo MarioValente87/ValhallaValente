@@ -334,6 +334,11 @@
   display: -ms-flexbox;
   display: flex;
   padding: 5px 5px;
+  margin: 1rem 1rem;
+  border-radius: 5px;
+  border: thin solid black;
+  -webkit-box-shadow: 5px 5px 5px 5px #0005;
+          box-shadow: 5px 5px 5px 5px #0005;
 }
 
 .seccion2 {
@@ -345,6 +350,11 @@
   display: -ms-flexbox;
   display: flex;
   padding: 5px 5px;
+  margin: 1rem 1rem;
+  border-radius: 5px;
+  border: thin solid black;
+  -webkit-box-shadow: 5px 5px 5px 5px #0005;
+          box-shadow: 5px 5px 5px 5px #0005;
 }
 
 .seccion3 {
@@ -356,6 +366,11 @@
   display: -ms-flexbox;
   display: flex;
   padding: 5px 5px;
+  margin: 1rem 1rem;
+  border-radius: 5px;
+  border: thin solid black;
+  -webkit-box-shadow: 5px 5px 5px 5px #0005;
+          box-shadow: 5px 5px 5px 5px #0005;
 }
 
 .seccion4 {
@@ -367,6 +382,11 @@
   display: -ms-flexbox;
   display: flex;
   padding: 5px 5px;
+  margin: 1rem 1rem;
+  border-radius: 5px;
+  border: thin solid black;
+  -webkit-box-shadow: 5px 5px 5px 5px #0005;
+          box-shadow: 5px 5px 5px 5px #0005;
 }
 
 .footer2 {
