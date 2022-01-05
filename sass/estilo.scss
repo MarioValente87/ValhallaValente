@@ -372,7 +372,218 @@ font-size: 1.2rem;
     color: white;
 }
 
+/* SECCION FOTOS */
+/* LAYOUT CON GRID AREAS */
 
+.layout__fotos {
+    display: grid;
+    grid-template-areas: 
+    "header header header header"
+    "nav nav nav nav"
+    "main main main main"
+    "footer footer footer footer";
+}
+
+.grid__header3 {
+    grid-area: header;
+    background-color: black;
+}
+
+.grid__nav3 {
+    grid-area: nav;
+    background-color:#3c3c3c;
+}
+
+.grid__slider3 {
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    background-image: url(https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_1920/https://guiaarquitectura.com/wp-content/uploads/2018/12/reja-de-acero-min.jpg);
+    border-radius: 10px;
+}
+
+.footer3 {
+    grid-area: footer;
+    background-color: black;
+    @include display;
+    flex-direction: column;
+    
+}
+
+/* BARRA DE NAVEGACIÓN */
+
+.grid__nav3 li a:hover {
+    background-color: black;
+
+}
+
+.grid__nav3 li a {
+    color: white;
+    font-size: larger;
+}
+
+/* TAMAÑO DEL SLIDER */
+/* las imágenes tienen que tener el mismo tamaño sino se desacomoda */
+
+.slide {
+    width: 100vh;
+    ;
+}
+
+.slide1 {
+    width: 100%;
+}
+
+.footer3 p {
+    color: white;
+}
+
+/* ACERCA DE NOSOTROS */
+
+.layout__nosotros {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "main main main"
+    "footer footer footer";
+}
+
+.grid__header4 {
+    grid-area: header;
+    background-color: black;
+
+}
+
+.grid__nav4 {
+    grid-area: nav;
+    background-color:#3c3c3c;
+}
+
+.grid__main4 {
+    grid-area: main;
+    display: flex;
+    padding: 5px 5px;
+}
+
+.footer4 {
+    grid-area: footer;
+    background-color: black;
+    @include display;
+    flex-direction: column;
+}
+
+/* BARRA DE NAVEGACIÓN */
+
+.grid__nav4 li a:hover {
+    background-color: black;
+
+}
+.grid__nav4 li a {
+    color: white;
+    font-size: larger;
+}
+/* FOOTER */
+
+
+
+.footer4 p {
+    color: white;
+}
+
+
+/* HORARIOS Y PRECIOS */
+
+.layout__hyp {
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "nav nav nav"
+    "tabla tabla tabla"
+    "footer footer footer" ;
+}
+
+.grid__header5 {
+    grid-area: header;
+    background-color: black;
+}
+
+.grid__nav5 {
+    grid-area: nav;
+    background-color:#3c3c3c;
+
+}
+
+.tablahyp {
+    grid-area: tabla;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: linen;
+    
+
+    
+}
+
+.footer5 {
+    grid-area: footer;
+    background-color: black;
+    @include display;
+    flex-direction: column;
+    
+}
+
+/* NAV */
+
+.grid__nav5 li a:hover {
+    background-color: black;
+
+}
+.grid__nav5 li a {
+    color: white;
+    font-size: larger;
+}
+
+/* TABLA */
+/* MODIFICADA CON BOOTSTRAP */
+/* .tabla {
+    border: 5px solid black;
+    margin: 10px;
+    border-collapse: collapse;
+    border-radius: 2px;
+    
+}
+
+.tabla td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.tabla th {
+    padding: 8px;
+}
+
+.tabla tr:hover td {
+    background: dimgray;
+}
+
+tr:nth-child(even) {
+    background-color:#ddd;
+}
+
+.tabla th {
+    background-color: lightslategray;
+}*/
+
+.footer5 p {
+    color: white;
+}  
+
+.tablahyp h2 {
+text-decoration: underline;
+}
 
 
 
