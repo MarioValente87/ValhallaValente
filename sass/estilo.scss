@@ -418,8 +418,11 @@ font-size: 1.2rem;
     "header header header header"
     "nav nav nav nav"
     "main main main main"
+    "section section section section"
     "footer footer footer footer";
 }
+
+
 
 .grid__header3 {
     grid-area: header;
@@ -433,6 +436,7 @@ font-size: 1.2rem;
 
 .grid__slider3 {
     grid-area: main;
+    position: relative;
     display: flex;
     justify-content: center;
     background-image: url(https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_1920/https://guiaarquitectura.com/wp-content/uploads/2018/12/reja-de-acero-min.jpg);
@@ -535,6 +539,68 @@ font-size: 1.2rem;
 
 .footer3 p {
     color: white;
+}
+
+.fist__1 {
+    position: absolute;
+    align-self:center;
+    justify-content:right;
+    right: 20vh;
+
+}
+
+.fist__1--container {
+    width: 100px;
+    height: auto;
+    img {
+        animation: pulse 1s linear infinite;
+    }
+    
+}
+.fist__2 {
+    position: absolute;
+    align-self:center;
+    left: 20vh;
+}
+.fist__2--container {
+    width: 100px;
+    height: auto;
+    img {
+        animation: pulse 1s linear infinite;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1.5);
+    }
+
+    50% {
+        transform: scale(.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* MOBILE FIST NONE */
+@media screen and (max-width: 870px) {
+    .fist__1 {
+        right: 9vh;
+    }
+    .fist__2 {
+        left: 8vh;
+    }
+}
+
+@media screen and (max-width: 752px) {
+    .fist__1 {
+        display: none;
+    }
+    .fist__2 {
+        display: none;
+    }
 }
 
 /* ACERCA DE NOSOTROS */
