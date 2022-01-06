@@ -442,6 +442,8 @@ font-size: 1.2rem;
 .grid__nav3 {
     grid-area: nav;
     background-color:#3c3c3c;
+    display: flex;
+    flex-direction: column;
 }
 
 .grid__slider3 {
