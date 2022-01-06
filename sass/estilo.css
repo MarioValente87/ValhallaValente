@@ -385,6 +385,16 @@
   }
 }
 
+@media screen and (max-width: 500px) {
+  .seccion1::before, .seccion2::before, .seccion3::before, .seccion4::before {
+    content: " ";
+    width: 200%;
+    height: 80%;
+    top: 0;
+    right: -20rem;
+  }
+}
+
 .seccion2 {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
