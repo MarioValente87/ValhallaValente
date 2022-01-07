@@ -126,7 +126,8 @@ $color-secundario:#3c3c3c;
 main .container__texto {
     font-family: 'Rajdhani', sans-serif;
     font-size: 1.2rem;
-    font-weight: 500;
+    letter-spacing: 2px;
+    font-weight:600;
 }
 
 .carousel {
@@ -249,6 +250,8 @@ font-size: 1.2rem;
 @import "footericonos";
 
 .grid__footer p {
+    font-family: 'Bebas Neue', cursive, sans-serif;
+    font-size: 1.5rem;
     color: white;
 }
 
@@ -373,7 +376,9 @@ font-size: 1.2rem;
 .grid__nav2 {
     a {
         color: white;
-        font-size: larger;
+        font-family: 'Bebas Neue', cursive, sans-serif;
+        font-size: 2rem;
+        padding: 0px 10px;
         &:hover {
             background-color: $color-primario;
         
@@ -391,10 +396,15 @@ font-size: 1.2rem;
     }
     .container {
         &__texto {
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 600;
             align-items: center;
             justify-content: center;
             text-align: center;
             width: 90%;
+            h2 {
+                font-family: 'Bebas Neue', cursive, sans-serif;
+            }
             
         }
         &__imagen2 {
@@ -422,12 +432,23 @@ font-size: 1.2rem;
         }
     &__texto {
         margin: 0 20px;
-        text-align: center;
+        align-self:center;
         z-index: 10;
+        font-family: 'Rajdhani', sans-serif;
+        font-size: 1.05rem;
+        text-indent: 3rem;
+        letter-spacing: 1px;
+        line-height: 25px;
+        font-weight: 600;
+        h2 {
+            font-family: 'Bebas Neue', cursive, sans-serif;
+        }
     }
 }
 
 .footer2 p {
+    font-family: 'Bebas Neue', cursive, sans-serif;
+    font-size: 1.5rem;
     color: white;
 }
 
@@ -546,7 +567,9 @@ font-size: 1.2rem;
 
 .grid__nav3 li a {
     color: white;
-    font-size: larger;
+    font-family: 'Bebas Neue', cursive, sans-serif;
+    font-size: 2rem;
+    padding: 0px 10px;
 }
 
 /* TAMAÑO DEL SLIDER */
@@ -563,6 +586,8 @@ font-size: 1.2rem;
 
 .footer3 p {
     color: white;
+    font-family: 'Bebas Neue', cursive, sans-serif;
+    font-size: 1.5rem;
 }
 
 .fist__1 {
@@ -676,14 +701,22 @@ font-size: 1.2rem;
 
 }
 .grid__nav4 li a {
+    font-family: 'Bebas Neue', cursive, sans-serif;
+    font-size: 2rem;
+    padding: 0px 10px;
     color: white;
-    font-size: larger;
+}
+
+.container__texto {
+    h1 {
+        font-family: 'Bebas Neue', cursive, sans-serif;
+    }
 }
 /* FOOTER */
 
-
-
 .footer4 p {
+    font-family: 'Bebas Neue', cursive, sans-serif;
+    font-size: 1.5rem;
     color: white;
 }
 
@@ -718,9 +751,10 @@ font-size: 1.2rem;
     align-content: center;
     align-items: center;
     background-color: linen;
-    
-
-    
+    h2, th, td {
+        font-family: 'Rajdhani', sans-serif;
+        font-weight: 600;
+    }
 }
 
 .footer5 {
@@ -739,7 +773,9 @@ font-size: 1.2rem;
 }
 .grid__nav5 li a {
     color: white;
-    font-size: larger;
+    font-family: 'Bebas Neue', cursive, sans-serif;
+    font-size: 2rem;
+    padding: 0px 10px;
 }
 
 /* TABLA */
@@ -774,6 +810,8 @@ tr:nth-child(even) {
 }*/
 
 .footer5 p {
+    font-family: 'Bebas Neue', cursive, sans-serif;
+    font-size: 1.5rem;
     color: white;
 }  
 
