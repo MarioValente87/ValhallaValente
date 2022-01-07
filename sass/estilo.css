@@ -136,7 +136,9 @@
 /* BARRA DE NAVEGACIÓN */
 .grid__nav a {
   color: white;
-  font-size: larger;
+  font-family: 'Bebas Neue', cursive, sans-serif;
+  font-size: 2rem;
+  padding: 0px 10px;
 }
 
 .grid__nav a:hover {
@@ -145,6 +147,12 @@
 
 /* MAIN ACTIVIDADES */
 /* HECHOC CON BOOTSTRAP  */
+main .container__texto {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
 .carousel {
   background-color: #686565;
 }
@@ -173,12 +181,14 @@
 }
 
 .form__title {
+  font-family: 'Bebas Neue', cursive, sans-serif;
   font-size: 2rem;
   margin-bottom: .05em;
 }
 
 .form__paragraph {
-  font-weight: 450;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 500;
 }
 
 .form__container {
@@ -196,6 +206,7 @@
   width: 100%;
   background: none;
   color: black;
+  font-family: 'Rajdhani', sans-serif;
   font-size: 1rem;
   padding: 0.6em 0.3em;
   border: none;
@@ -206,6 +217,7 @@
   color: rgba(109, 102, 102, 0.74);
   cursor: pointer;
   position: absolute;
+  font-family: 'Rajdhani', sans-serif;
   top: 0;
   left: 5px;
   -webkit-transform: translateY(10px);
@@ -217,6 +229,7 @@
 }
 
 .form__submit {
+  font-family: 'Rajdhani', sans-serif;
   border-radius: 10px;
   border: none;
 }
@@ -260,6 +273,7 @@
   max-width: 500px;
   width: 90%;
   text-align: center;
+  font-family: 'Bebas Neue', cursive, sans-serif;
   font-weight: 500;
 }
 
@@ -620,12 +634,9 @@
   right: 20vh;
 }
 
-.fist__1--container {
-  width: 100px;
-  height: auto;
-}
-
 .fist__1--container img {
+  max-width: 100%;
+  height: auto;
   -webkit-animation: pulse 1s linear infinite;
           animation: pulse 1s linear infinite;
 }

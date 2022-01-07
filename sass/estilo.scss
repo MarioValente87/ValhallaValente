@@ -110,7 +110,9 @@ $color-secundario:#3c3c3c;
 .grid__nav {
     a {
         color: white;
-        font-size: larger;
+        font-family: 'Bebas Neue', cursive, sans-serif;
+        font-size: 2rem;
+        padding: 0px 10px;
         &:hover {
             background-color: $color-primario;
         
@@ -121,7 +123,11 @@ $color-secundario:#3c3c3c;
 /* MAIN ACTIVIDADES */
 
 /* HECHOC CON BOOTSTRAP  */
-
+main .container__texto {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
 
 .carousel {
     background-color: rgb(104, 101, 101);
@@ -150,11 +156,13 @@ $color-secundario:#3c3c3c;
         text-align: center;
     }
     &__title {
+        font-family: 'Bebas Neue', cursive, sans-serif;
         font-size: 2rem;
         margin-bottom: .05em;
     }
     &__paragraph {
-        font-weight: 450;
+        font-family: 'Rajdhani', sans-serif;
+        font-weight: 500;
     }
     &__container {
         display: grid;
@@ -168,6 +176,7 @@ $color-secundario:#3c3c3c;
         width: 100%;
         background: none;
         color: $color-primario;
+        font-family: 'Rajdhani', sans-serif;
         font-size: 1rem;
         padding: .6em.3em;
         border: none;
@@ -177,12 +186,14 @@ $color-secundario:#3c3c3c;
         color: rgba(109, 102, 102, 0.74);
         cursor: pointer;
         position: absolute;
+        font-family: 'Rajdhani', sans-serif;
         top: 0;
         left: 5px;
         transform: translateY(10px);
         transition:transform .5s, color .3s;
     }
     &__submit {
+        font-family: 'Rajdhani', sans-serif;
         border-radius: 10px;
         border: none;
     }
@@ -225,6 +236,7 @@ font-size: 1.2rem;
         max-width: 500px;
         width: 90%;
         text-align: center;
+        font-family: 'Bebas Neue', cursive, sans-serif;
         font-weight: 500;
         &--mapa {
             width: 100%;
@@ -472,9 +484,9 @@ font-size: 1.2rem;
 }
 
 .fist__1--container {
-    width: 100px;
-    height: auto;
     img {
+        max-width: 100%;
+        height: auto;
         animation: pulse 1s linear infinite;
     }
     
