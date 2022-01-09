@@ -864,7 +864,12 @@ main .container__texto {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 5px 5px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5px 55px;
 }
 
 @media screen and (max-width: 764px) {
@@ -921,6 +926,148 @@ main .container__texto {
 
 .container__texto h1 {
   font-family: 'Bebas Neue', cursive, sans-serif;
+}
+
+/* MAIN */
+.container__imagen2 img {
+  max-width: 70vh;
+  height: auto;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 40px 0;
+}
+
+.container .card {
+  position: relative;
+  min-width: 320px;
+  height: 440px;
+  -webkit-box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2), inset -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+          box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2), inset -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  margin: 30px;
+  background: black;
+}
+
+.container .card .box {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background: #2a2b2f;
+  border: 2px solid #1e1f23;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0.5;
+}
+
+.container .card .box:hover {
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
+  -webkit-box-shadow: 0 40px 70px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 40px 70px rgba(0, 0, 0, 0.5);
+  opacity: 1;
+}
+
+.container .card .box .content {
+  padding: 20px;
+  text-align: center;
+}
+
+.container .card .box .content h2 {
+  position: absolute;
+  top: -10px;
+  right: 0px;
+  font-size: 3em;
+  z-index: 2;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.container .card .box .content h3 {
+  font-size: 1.5em;
+  color: rgba(255, 255, 255, 0.5);
+  z-index: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.container .card .box .content p {
+  font-size: 1em;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 300;
+  z-index: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.container .card .box .content a {
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  background: #000;
+  margin-top: 15px;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 20px;
+}
+
+.container .card .box .content img {
+  z-index: -1;
+  border-radius: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.content .sci {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content .sci li {
+  list-style: none;
+  margin: 0px 15px;
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+  opacity: 0;
+}
+
+.container .card:hover .sci li {
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+  opacity: 1;
 }
 
 /* FOOTER */
