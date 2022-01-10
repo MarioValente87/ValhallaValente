@@ -532,9 +532,10 @@ font-size: 1.2rem;
 
 .fist__1 {
     position: absolute;
-    align-self:center;
+    margin-top: 8em;
+    align-self:stretch;
     justify-content:right;
-    right: 20vh;
+    right: 3%;
 
 }
 
@@ -548,8 +549,9 @@ font-size: 1.2rem;
 }
 .fist__2 {
     position: absolute;
-    align-self:center;
-    left: 20vh;
+    margin-top: 8em;
+    align-self:stretch;
+    left: 3%;
 }
 .fist__2--container {
     width: 100px;
@@ -576,21 +578,13 @@ font-size: 1.2rem;
 /* MOBILE FIST NONE */
 @media screen and (max-width: 870px) {
     .fist__1 {
-        right: 9vh;
+        display: none;
     }
     .fist__2 {
-        left: 8vh;
+        display: none;
     }
 }
 
-@media screen and (max-width: 752px) {
-    .fist__1 {
-        display: none;
-    }
-    .fist__2 {
-        display: none;
-    }
-}
 
 /* ACERCA DE NOSOTROS */
 

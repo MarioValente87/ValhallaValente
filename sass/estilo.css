@@ -672,13 +672,14 @@ main .container__texto {
 /* ANIMACIONES PUÑO */
 .fist__1 {
   position: absolute;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  margin-top: 8em;
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
   -webkit-box-pack: right;
       -ms-flex-pack: right;
           justify-content: right;
-  right: 20vh;
+  right: 3%;
 }
 
 .fist__1--container {
@@ -693,10 +694,11 @@ main .container__texto {
 
 .fist__2 {
   position: absolute;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  left: 20vh;
+  margin-top: 8em;
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+  left: 3%;
 }
 
 .fist__2--container {
@@ -741,15 +743,6 @@ main .container__texto {
 
 /* MOBILE FIST NONE */
 @media screen and (max-width: 870px) {
-  .fist__1 {
-    right: 9vh;
-  }
-  .fist__2 {
-    left: 8vh;
-  }
-}
-
-@media screen and (max-width: 752px) {
   .fist__1 {
     display: none;
   }
