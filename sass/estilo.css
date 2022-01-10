@@ -2,7 +2,6 @@
 .layout {
   display: -ms-grid;
   display: grid;
-  /* grid-template-rows: 1fr auto; */
       grid-template-areas: "header header  header header" "nav nav nav nav" "slider slider slider slider" "main main main main" "contacto contacto ubicacion ubicacion" "contacto contacto ubicacion ubicacion" "footer footer footer footer";
 }
 
@@ -607,8 +606,6 @@ main .container__texto {
   -ms-grid-column-span: 3;
   grid-area: nav;
   background-color: #3c3c3c;
-  /* display: flex;
-    flex-direction: column; */
 }
 
 .grid__slider3 {
@@ -648,89 +645,10 @@ main .container__texto {
           flex-direction: column;
 }
 
-.fist__1 {
-  position: absolute;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
-  right: 20vh;
-}
-
-.fist__1--container img {
-  max-width: 100%;
-  height: auto;
-  -webkit-animation: pulse 1s linear infinite;
-          animation: pulse 1s linear infinite;
-}
-
-.fist__2 {
-  position: absolute;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  left: 20vh;
-}
-
-.fist__2--container {
-  width: 100px;
-  height: auto;
-}
-
-.fist__2--container img {
-  -webkit-animation: pulse 1s linear infinite;
-          animation: pulse 1s linear infinite;
-}
-
-@-webkit-keyframes pulse {
-  0% {
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
-  }
-  50% {
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-
-@keyframes pulse {
-  0% {
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
-  }
-  50% {
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-
-/* MOBILE FIST NONE */
-@media screen and (max-width: 870px) {
-  .fist__1 {
-    right: 9vh;
-  }
-  .fist__2 {
-    left: 8vh;
-  }
-}
-
-@media screen and (max-width: 752px) {
-  .fist__1 {
-    display: none;
-  }
-  .fist__2 {
-    display: none;
-  }
+.footer3 p {
+  color: white;
+  font-family: 'Bebas Neue', cursive, sans-serif;
+  font-size: 1.5rem;
 }
 
 /* BARRA DE NAVEGACIÓN */
@@ -746,21 +664,12 @@ main .container__texto {
 }
 
 /* TAMAÑO DEL SLIDER */
-/* las imágenes tienen que tener el mismo tamaño sino se desacomoda */
 .slide {
-  width: 100vh;
-}
-
-.slide1 {
   width: 100%;
+  height: auto;
 }
 
-.footer3 p {
-  color: white;
-  font-family: 'Bebas Neue', cursive, sans-serif;
-  font-size: 1.5rem;
-}
-
+/* ANIMACIONES PUÑO */
 .fist__1 {
   position: absolute;
   -ms-flex-item-align: center;
@@ -798,6 +707,21 @@ main .container__texto {
 .fist__2--container img {
   -webkit-animation: pulse 1s linear infinite;
           animation: pulse 1s linear infinite;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  50% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 
 @keyframes pulse {
