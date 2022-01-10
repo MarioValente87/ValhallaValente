@@ -781,12 +781,21 @@ main .container__texto {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: 2em;
+}
+
+.grid__main4 .container__imagen2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media screen and (max-width: 764px) {
@@ -805,7 +814,7 @@ main .container__texto {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    max-width: 100%;
+    max-width: 100vw;
   }
   .grid__main4 .container__imagen2 img {
     max-width: 100vw;
@@ -860,16 +869,16 @@ main .container__texto {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   max-width: 1200px;
-  margin: 40px 0;
+  margin: 0;
 }
 
 .container .card {

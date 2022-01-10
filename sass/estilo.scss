@@ -611,9 +611,13 @@ font-size: 1.2rem;
 .grid__main4 {
     grid-area: main;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    flex-wrap: wrap;
     margin-top: 2em;
+    .container__imagen2 {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 @media screen and (max-width: 764px) {
@@ -621,11 +625,10 @@ font-size: 1.2rem;
     display: flex;
     @include display;
     flex-direction: column;
-    max-width: 100%;
+    max-width: 100vw;
     .container__imagen2 img {
         max-width: 100vw;
         height: auto;
-        
         }
     }
 }
@@ -658,15 +661,16 @@ font-size: 1.2rem;
 .container__imagen2 img {
 max-width: 50%;
 height: auto;
-
 }
+
+
 .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     max-width: 1200px;
-    margin: 40px 0;
+    margin: 0;
     
 }
 
@@ -681,10 +685,7 @@ height: auto;
     border-radius: 15px;
     margin: 30px;
     background:black;
-    
-    
-    
-    
+
 }
 
 .container .card .box {
@@ -883,7 +884,5 @@ tr:nth-child(even) {
 .tablahyp h2 {
 text-decoration: underline;
 }
-
-
 
 
