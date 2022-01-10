@@ -621,6 +621,12 @@ font-size: 1.2rem;
     display: flex;
     @include display;
     flex-direction: column;
+    max-width: 100%;
+    .container__imagen2 img {
+        max-width: 100vw;
+        height: auto;
+        
+        }
     }
 }
 .footer4 {

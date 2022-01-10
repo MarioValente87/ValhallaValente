@@ -805,6 +805,11 @@ main .container__texto {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    max-width: 100%;
+  }
+  .grid__main4 .container__imagen2 img {
+    max-width: 100vw;
+    height: auto;
   }
 }
 
