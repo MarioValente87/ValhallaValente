@@ -679,6 +679,7 @@ main .container__texto {
       -ms-flex-pack: right;
           justify-content: right;
   right: 3%;
+  pointer-events: none;
 }
 
 .fist__1--container {
