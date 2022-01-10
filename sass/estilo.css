@@ -620,8 +620,6 @@ main .container__texto {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url(https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_1920/https://guiaarquitectura.com/wp-content/uploads/2018/12/reja-de-acero-min.jpg);
-  border-radius: 10px;
 }
 
 .footer3 {
@@ -667,6 +665,7 @@ main .container__texto {
 .slide {
   width: 100%;
   height: auto;
+  background-image: url(https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_1920/https://guiaarquitectura.com/wp-content/uploads/2018/12/reja-de-acero-min.jpg);
 }
 
 /* ANIMACIONES PUÑO */
