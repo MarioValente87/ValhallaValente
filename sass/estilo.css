@@ -786,7 +786,7 @@ main .container__texto {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 5px 55px;
+  margin-top: 2em;
 }
 
 @media screen and (max-width: 764px) {
@@ -847,7 +847,7 @@ main .container__texto {
 
 /* MAIN */
 .container__imagen2 img {
-  max-width: 70vh;
+  max-width: 50%;
   height: auto;
 }
 
