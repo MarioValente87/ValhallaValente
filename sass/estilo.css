@@ -46,6 +46,12 @@
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: main;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .grid__contacto {

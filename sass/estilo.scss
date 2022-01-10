@@ -58,6 +58,9 @@ $color-secundario:#3c3c3c;
 .grid__main {
     background-color: rgb(208, 219, 219);
     grid-area: main;
+    display: flex;
+    justify-content: center;
+    
 }
 .grid__contacto {
     grid-area: contacto;
