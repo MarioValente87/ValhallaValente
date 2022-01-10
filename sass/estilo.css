@@ -607,13 +607,8 @@ main .container__texto {
   -ms-grid-column-span: 3;
   grid-area: nav;
   background-color: #3c3c3c;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  /* display: flex;
+    flex-direction: column; */
 }
 
 .grid__slider3 {
