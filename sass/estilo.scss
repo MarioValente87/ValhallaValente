@@ -536,15 +536,16 @@ font-size: 1.2rem;
     align-self:stretch;
     justify-content:right;
     right: 3%;
-    pointer-events: none;
+    
 
 }
 
 .fist__1--container {
     width: 100px;
     height: auto;
-    img {
+        img {
         animation: pulse 1s linear infinite;
+        
     }
     
 }
@@ -553,12 +554,14 @@ font-size: 1.2rem;
     margin-top: 8em;
     align-self:stretch;
     left: 3%;
+    
 }
 .fist__2--container {
     width: 100px;
     height: auto;
-    img {
+        img {
         animation: pulse 1s linear infinite;
+        
     }
 }
 
