@@ -1,4 +1,7 @@
 @charset "UTF-8";
+/***********************VARIABLES******************/
+/***********************MIXIN******************/
+/***********************ESTILOS DEL PROYECTO******************/
 .layout {
   display: -ms-grid;
   display: grid;
@@ -16,11 +19,11 @@
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: header;
-  background-color: black;
+  background-color: #000000;
 }
 
 .grid__nav {
-  background-color: #3c3c3c;
+  background-color: #1f2023;
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
@@ -29,18 +32,14 @@
 }
 
 .grid__slider {
-  background-color: #dadee2;
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
   grid-area: slider;
-  /* display: flex; */
-  /* error */
-  /* justify-content: center; */
 }
 
 .grid__main {
-  background-color: #d0dbdb;
+  background-color: #b1b2c1;
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
@@ -59,9 +58,7 @@
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: contacto;
-  background-color: #e5e5f7;
-  opacity: 0.9;
-  background-image: radial-gradient(#b8b9d1 0.5px, transparent 0.5px), radial-gradient(#b8b9d1 0.5px, #e5e5f7 0.5px);
+  background-color: #7b7c87;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -82,9 +79,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #e5e5f7;
-  opacity: 0.8;
-  background-image: radial-gradient(#61626c 0.5px, transparent 0.5px), radial-gradient(#61626c 0.5px, #e5e5f7 0.5px);
+  background-color: #7b7c87;
 }
 
 .grid__footer {
@@ -92,7 +87,7 @@
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: footer;
-  background-color: black;
+  background-color: #000000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -140,29 +135,28 @@
 
 /* BARRA DE NAVEGACIÓN */
 .grid__nav a {
-  color: white;
-  font-family: 'Bebas Neue', cursive, sans-serif;
+  color: #fff;
+  font-family: "Bebas Neue", sans-serif;
   font-size: 2rem;
   padding: 0px 10px;
 }
 
 .grid__nav a:hover {
-  background-color: black;
+  background-color: #000000;
 }
 
 /* MAIN ACTIVIDADES */
 /* HECHOC CON BOOTSTRAP  */
 main .container__texto {
-  font-family: 'Rajdhani', sans-serif;
+  font-family: "Rajdhani", sans-serif;
   font-size: 1.2rem;
   letter-spacing: 2px;
   font-weight: 600;
 }
 
-.carousel {
-  background-color: #686565;
-}
-
+/* .carousel {
+    background-color: rgb(104, 101, 101);
+   }  */
 /* .carousel-item {
     height: 65vh;
     min-height: 400px;
@@ -181,19 +175,19 @@ main .container__texto {
   padding: 4.5em 3em;
   border-radius: 10px;
   background-color: white;
-  -webkit-box-shadow: 5px 5px 10px black;
-          box-shadow: 5px 5px 10px black;
+  -webkit-box-shadow: 5px 5px 10px #1f2023;
+          box-shadow: 5px 5px 10px #1f2023;
   text-align: center;
 }
 
 .form__title {
-  font-family: 'Bebas Neue', cursive, sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   font-size: 2rem;
   margin-bottom: .05em;
 }
 
 .form__paragraph {
-  font-family: 'Rajdhani', sans-serif;
+  font-family: "Rajdhani", sans-serif;
   font-weight: 500;
 }
 
@@ -205,14 +199,14 @@ main .container__texto {
 
 .form__group {
   position: relative;
-  color: rgba(109, 102, 102, 0.74);
+  color: #4a4b52;
 }
 
 .form__imput {
   width: 100%;
   background: none;
-  color: black;
-  font-family: 'Rajdhani', sans-serif;
+  color: #000000;
+  font-family: "Rajdhani", sans-serif;
   font-size: 1rem;
   padding: 0.6em 0.3em;
   border: none;
@@ -220,10 +214,10 @@ main .container__texto {
 }
 
 .form__label {
-  color: rgba(109, 102, 102, 0.74);
+  color: #b1b2c1;
   cursor: pointer;
   position: absolute;
-  font-family: 'Rajdhani', sans-serif;
+  font-family: "Rajdhani", sans-serif;
   top: 0;
   left: 5px;
   -webkit-transform: translateY(10px);
@@ -235,7 +229,7 @@ main .container__texto {
 }
 
 .form__submit {
-  font-family: 'Rajdhani', sans-serif;
+  font-family: "Rajdhani", sans-serif;
   border-radius: 10px;
   border: none;
 }
@@ -246,7 +240,7 @@ main .container__texto {
   left: 0;
   width: 100%;
   height: 1px;
-  background: gray;
+  background: #4a4b52;
   -webkit-transform: scale(o);
           transform: scale(o);
   -webkit-transform: left bottom;
@@ -279,12 +273,18 @@ main .container__texto {
   max-width: 500px;
   width: 90%;
   text-align: center;
-  font-family: 'Bebas Neue', cursive, sans-serif;
+  font-family: "Rajdhani", sans-serif;
   font-weight: 500;
 }
 
 .container__ubicacion--mapa {
   width: 100%;
+}
+
+.container__ubicacion h2 {
+  color: #000000;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2rem;
 }
 
 /* FOOTER */
@@ -318,9 +318,9 @@ main .container__texto {
 }
 
 .grid__footer p {
-  font-family: 'Bebas Neue', cursive, sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   font-size: 1.5rem;
-  color: white;
+  color: #fff;
 }
 
 /* SECCION DISCIPLINAS */
@@ -330,6 +330,7 @@ main .container__texto {
   display: grid;
   overflow-x: hidden;
   /* sin esta propiedad se genera barra de scroll horizontal por el efecto de que aparece desde fuera de la pantalla */
+  background-color: #b1b2c1;
       grid-template-areas: "header header header header" "nav nav nav nav" "section1 section1 section1 section1" "section2 section2 section2 section2" "section3 section3 section3 section3" "section4 section4 section4 section4" "footer footer footer footer";
 }
 
@@ -338,7 +339,7 @@ main .container__texto {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: header;
-  background-color: black;
+  background-color: #000000;
 }
 
 .grid__nav2 {
@@ -346,7 +347,7 @@ main .container__texto {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: nav;
-  background-color: #3c3c3c;
+  background-color: #1f2023;
 }
 
 .seccion1 {
@@ -383,7 +384,7 @@ main .container__texto {
   content: " ";
   position: absolute;
   inset: 4px;
-  background: #bbbdca;
+  background: #7b7c87;
   border: 16px;
 }
 
@@ -475,7 +476,7 @@ main .container__texto {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: footer;
-  background-color: black;
+  background-color: #000000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -494,14 +495,14 @@ main .container__texto {
 
 /* BARRA DE NAVEGACIÓN */
 .grid__nav2 a {
-  color: white;
-  font-family: 'Bebas Neue', cursive, sans-serif;
+  color: #fff;
+  font-family: "Bebas Neue", sans-serif;
   font-size: 2rem;
   padding: 0px 10px;
 }
 
 .grid__nav2 a:hover {
-  background-color: black;
+  background-color: #000000;
 }
 
 /* DISCIPLINAS: SECCION 1 */
@@ -524,7 +525,7 @@ main .container__texto {
             flex-direction: column;
   }
   .container__texto {
-    font-family: 'Rajdhani', sans-serif;
+    font-family: "Rajdhani", sans-serif;
     font-weight: 600;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -536,7 +537,7 @@ main .container__texto {
     width: 90%;
   }
   .container__texto h2 {
-    font-family: 'Bebas Neue', cursive, sans-serif;
+    font-family: "Bebas Neue", sans-serif;
   }
   .container__imagen2 {
     text-align: center;
@@ -568,7 +569,7 @@ main .container__texto {
       -ms-grid-row-align: center;
       align-self: center;
   z-index: 10;
-  font-family: 'Rajdhani', sans-serif;
+  font-family: "Rajdhani", sans-serif;
   font-size: 1.05rem;
   text-indent: 3rem;
   letter-spacing: 1px;
@@ -577,13 +578,13 @@ main .container__texto {
 }
 
 .container__texto h2 {
-  font-family: 'Bebas Neue', cursive, sans-serif;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 .footer2 p {
-  font-family: 'Bebas Neue', cursive, sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   font-size: 1.5rem;
-  color: white;
+  color: #fff;
 }
 
 /* SECCION FOTOS */
@@ -599,7 +600,7 @@ main .container__texto {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: header;
-  background-color: black;
+  background-color: #000000;
 }
 
 .grid__nav3 {
@@ -607,7 +608,7 @@ main .container__texto {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: nav;
-  background-color: #3c3c3c;
+  background-color: #1f2023;
 }
 
 .grid__slider3 {
@@ -629,7 +630,7 @@ main .container__texto {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: footer;
-  background-color: black;
+  background-color: #000000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -646,8 +647,8 @@ main .container__texto {
 }
 
 .footer3 p {
-  color: white;
-  font-family: 'Bebas Neue', cursive, sans-serif;
+  color: #fff;
+  font-family: "Bebas Neue", sans-serif;
   font-size: 1.5rem;
 }
 
@@ -657,8 +658,8 @@ main .container__texto {
 }
 
 .grid__nav3 li a {
-  color: white;
-  font-family: 'Bebas Neue', cursive, sans-serif;
+  color: #fff;
+  font-family: "Bebas Neue", sans-serif;
   font-size: 2rem;
   padding: 0px 10px;
 }
@@ -764,7 +765,7 @@ main .container__texto {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: header;
-  background-color: black;
+  background-color: #000000;
 }
 
 .grid__nav4 {
@@ -772,7 +773,7 @@ main .container__texto {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: nav;
-  background-color: #3c3c3c;
+  background-color: #1f2023;
 }
 
 .grid__main4 {
@@ -829,7 +830,7 @@ main .container__texto {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: footer;
-  background-color: black;
+  background-color: #000000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -847,18 +848,18 @@ main .container__texto {
 
 /* BARRA DE NAVEGACIÓN */
 .grid__nav4 li a:hover {
-  background-color: black;
+  background-color: #000000;
 }
 
 .grid__nav4 li a {
-  font-family: 'Bebas Neue', cursive, sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   font-size: 2rem;
   padding: 0px 10px;
-  color: white;
+  color: #fff;
 }
 
 .container__texto h1 {
-  font-family: 'Bebas Neue', cursive, sans-serif;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 /* MAIN */
@@ -1007,7 +1008,7 @@ main .container__texto {
 .footer4 p {
   font-family: 'Bebas Neue', cursive, sans-serif;
   font-size: 1.5rem;
-  color: white;
+  color: #fff;
 }
 
 /* HORARIOS Y PRECIOS */
@@ -1022,7 +1023,7 @@ main .container__texto {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: header;
-  background-color: black;
+  background-color: #000000;
 }
 
 .grid__nav5 {
@@ -1030,7 +1031,7 @@ main .container__texto {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: nav;
-  background-color: #3c3c3c;
+  background-color: #1f2023;
 }
 
 .tablahyp {
@@ -1057,7 +1058,7 @@ main .container__texto {
 }
 
 .tablahyp h2, .tablahyp th, .tablahyp td {
-  font-family: 'Rajdhani', sans-serif;
+  font-family: "Rajdhani", sans-serif;
   font-weight: 600;
 }
 
@@ -1066,7 +1067,7 @@ main .container__texto {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: footer;
-  background-color: black;
+  background-color: #000000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1084,50 +1085,20 @@ main .container__texto {
 
 /* NAV */
 .grid__nav5 li a:hover {
-  background-color: black;
+  background-color: #000000;
 }
 
 .grid__nav5 li a {
-  color: white;
-  font-family: 'Bebas Neue', cursive, sans-serif;
+  color: #fff;
+  font-family: "Bebas Neue", sans-serif;
   font-size: 2rem;
   padding: 0px 10px;
 }
 
-/* TABLA */
-/* MODIFICADA CON BOOTSTRAP */
-/* .tabla {
-    border: 5px solid black;
-    margin: 10px;
-    border-collapse: collapse;
-    border-radius: 2px;
-    
-}
-
-.tabla td {
-    border: 1px solid black;
-    padding: 5px;
-}
-
-.tabla th {
-    padding: 8px;
-}
-
-.tabla tr:hover td {
-    background: dimgray;
-}
-
-tr:nth-child(even) {
-    background-color:#ddd;
-}
-
-.tabla th {
-    background-color: lightslategray;
-}*/
 .footer5 p {
-  font-family: 'Bebas Neue', cursive, sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   font-size: 1.5rem;
-  color: white;
+  color: #fff;
 }
 
 .tablahyp h2 {

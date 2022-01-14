@@ -1,6 +1,27 @@
+
+/***********************VARIABLES******************/
 $color-primario: black;
 $color-secundario:#3c3c3c;
+$color-primario: black;
+$color-secundario:#3c3c3c;
+$color1: #000000;
+$color2:  #1f2023;
+$color3:  #4a4b52;
+$color4:  #7b7c87;
+$color5:  #b1b2c1;
+$color6: #fff;
+$font1: 'Bebas Neue', sans-serif;
+$font2: 'Rajdhani', sans-serif;
 
+/***********************MIXIN******************/
+
+@mixin shadow {
+    margin: 1rem 1rem;
+    border-radius: 5px;
+    border: thin solid black;
+    box-shadow: 5px 5px 5px 5px #0005;
+    
+}
 
 @mixin display {
     display: flex;
@@ -8,8 +29,10 @@ $color-secundario:#3c3c3c;
     align-items: center;
 }
 
+/***********************ESTILOS DEL PROYECTO******************/
+
+
 .layout {
-   
     display: grid;
     grid-template-areas: 
     "header header  header header"
@@ -37,22 +60,20 @@ $color-secundario:#3c3c3c;
 }
 .grid__header {
     grid-area: header;
-    background-color: $color-primario;
+    background-color: $color1;
     
 }
 .grid__nav {
-    background-color:$color-secundario;
+    background-color:$color2;
     grid-area: nav;
     width: 100%;
 }
 .grid__slider {
-    background-color: rgb(218, 222, 226);
     grid-area: slider;
-    /* display: flex; */ /* error */
-    /* justify-content: center; */
 }
+
 .grid__main {
-    background-color: rgb(208, 219, 219);
+    background-color: $color5;
     grid-area: main;
     display: flex;
     justify-content: center;
@@ -60,22 +81,19 @@ $color-secundario:#3c3c3c;
 }
 .grid__contacto {
     grid-area: contacto;
-    background-color: #e5e5f7;
-    opacity: 0.9;
-    background-image:  radial-gradient(#b8b9d1 0.5px, transparent 0.5px), radial-gradient(#b8b9d1 0.5px, #e5e5f7 0.5px);
+    background-color:$color4;
     display: flex;
 }
 .grid__ubicacion {
     grid-area: ubicacion;
     @include display;
-    background-color: #e5e5f7;
-    opacity: 0.8;
-    background-image:  radial-gradient(#61626c 0.5px, transparent 0.5px), radial-gradient(#61626c 0.5px, #e5e5f7 0.5px);
+    background-color:$color4;
+    
 }
 
 .grid__footer {
     grid-area: footer;
-    background-color: black;
+    background-color:$color1;
     @include display;
     flex-direction: column;
 }
@@ -106,18 +124,16 @@ $color-secundario:#3c3c3c;
     }
 
 
-
-
 /* BARRA DE NAVEGACIÓN */
 
 .grid__nav {
     a {
-        color: white;
-        font-family: 'Bebas Neue', cursive, sans-serif;
+        color: $color6;
+        font-family: $font1;
         font-size: 2rem;
         padding: 0px 10px;
         &:hover {
-            background-color: $color-primario;
+            background-color: $color1;
         
         }
     }
@@ -127,15 +143,15 @@ $color-secundario:#3c3c3c;
 
 /* HECHOC CON BOOTSTRAP  */
 main .container__texto {
-    font-family: 'Rajdhani', sans-serif;
+    font-family: $font2;
     font-size: 1.2rem;
     letter-spacing: 2px;
     font-weight:600;
 }
 
-.carousel {
+/* .carousel {
     background-color: rgb(104, 101, 101);
-   } 
+   }  */
 
 /* .carousel-item {
     height: 65vh;
@@ -156,16 +172,16 @@ main .container__texto {
         padding: 4.5em 3em;
         border-radius: 10px;
         background-color: white;
-        box-shadow: 5px 5px 10px $color-primario;
+        box-shadow: 5px 5px 10px $color2;
         text-align: center;
     }
     &__title {
-        font-family: 'Bebas Neue', cursive, sans-serif;
+        font-family: $font1;
         font-size: 2rem;
         margin-bottom: .05em;
     }
     &__paragraph {
-        font-family: 'Rajdhani', sans-serif;
+        font-family: $font2;
         font-weight: 500;
     }
     &__container {
@@ -174,30 +190,30 @@ main .container__texto {
     }
     &__group {
         position: relative;
-        color:rgba(109, 102, 102, 0.74);
+        color: $color3;
     }
     &__imput {
         width: 100%;
         background: none;
-        color: $color-primario;
-        font-family: 'Rajdhani', sans-serif;
+        color: $color1;
+        font-family: $font2;
         font-size: 1rem;
         padding: .6em.3em;
         border: none;
         outline: none;
     }
     &__label {
-        color: rgba(109, 102, 102, 0.74);
+        color: $color5;
         cursor: pointer;
         position: absolute;
-        font-family: 'Rajdhani', sans-serif;
+        font-family: $font2;
         top: 0;
         left: 5px;
         transform: translateY(10px);
         transition:transform .5s, color .3s;
     }
     &__submit {
-        font-family: 'Rajdhani', sans-serif;
+        font-family: $font2;
         border-radius: 10px;
         border: none;
     }
@@ -207,7 +223,7 @@ main .container__texto {
         left: 0;
         width: 100%;
         height: 1px;
-        background: gray;
+        background: $color3;
         transform: scale(o);
         transform: left bottom;
         transform: transform .4s;
@@ -240,11 +256,16 @@ font-size: 1.2rem;
         max-width: 500px;
         width: 90%;
         text-align: center;
-        font-family: 'Bebas Neue', cursive, sans-serif;
+        font-family:$font2;
         font-weight: 500;
         &--mapa {
             width: 100%;
             }
+    h2 {
+        color: $color1;
+        font-family: $font1;
+        font-size: 2rem;
+    }
     }
 }
 
@@ -253,9 +274,9 @@ font-size: 1.2rem;
 @import "footericonos";
 
 .grid__footer p {
-    font-family: 'Bebas Neue', cursive, sans-serif;
+    font-family: $font1;
     font-size: 1.5rem;
-    color: white;
+    color: $color6;
 }
 
 /* SECCION DISCIPLINAS */
@@ -264,6 +285,7 @@ font-size: 1.2rem;
 .layout__disciplinas {
     display: grid;
     overflow-x: hidden; /* sin esta propiedad se genera barra de scroll horizontal por el efecto de que aparece desde fuera de la pantalla */
+    background-color: $color5;
     grid-template-areas:
     "header header header header"
     "nav nav nav nav"
@@ -276,27 +298,22 @@ font-size: 1.2rem;
 
 .grid__header2 {
     grid-area: header;
-    background-color:$color-primario;
+    background-color:$color1;
 }
 
 .grid__nav2 {
     grid-area:nav;
-    background-color: $color-secundario;
+    background-color: $color2;
 }
 
-@mixin shadow {
-    margin: 1rem 1rem;
-    border-radius: 5px;
-    border: thin solid black;
-    box-shadow: 5px 5px 5px 5px #0005;
-    
-}
+
 .seccion1 {
     grid-area: section1;
     display: flex;
     padding: 5px 5px;
     @include shadow;
     overflow: hidden;
+    
     
 }
 .seccion1::before, .seccion2::before, .seccion3::before, .seccion4::before  {
@@ -314,7 +331,7 @@ font-size: 1.2rem;
     content: " ";
     position: absolute;
     inset: 4px;
-    background: #bbbdca;
+    background: $color4;
     border: 16px;
 }
 
@@ -367,7 +384,7 @@ font-size: 1.2rem;
 
 .footer2 {
     grid-area: footer;
-    background-color: $color-primario;
+    background-color: $color1;
     display: flex;
     @include display;
     flex-direction: column;
@@ -379,12 +396,12 @@ font-size: 1.2rem;
 
 .grid__nav2 {
     a {
-        color: white;
-        font-family: 'Bebas Neue', cursive, sans-serif;
+        color: $color6;
+        font-family: $font1;
         font-size: 2rem;
         padding: 0px 10px;
         &:hover {
-            background-color: $color-primario;
+            background-color: $color1;
         
         }
     }
@@ -400,14 +417,14 @@ font-size: 1.2rem;
     }
     .container {
         &__texto {
-            font-family: 'Rajdhani', sans-serif;
+            font-family: $font2;
             font-weight: 600;
             align-items: center;
             justify-content: center;
             text-align: center;
             width: 90%;
             h2 {
-                font-family: 'Bebas Neue', cursive, sans-serif;
+                font-family:$font1;
             }
             
         }
@@ -438,22 +455,22 @@ font-size: 1.2rem;
         margin: 0 20px;
         align-self:center;
         z-index: 10;
-        font-family: 'Rajdhani', sans-serif;
+        font-family: $font2;
         font-size: 1.05rem;
         text-indent: 3rem;
         letter-spacing: 1px;
         line-height: 25px;
         font-weight: 600;
         h2 {
-            font-family: 'Bebas Neue', cursive, sans-serif;
+            font-family: $font1;
         }
     }
 }
 
 .footer2 p {
-    font-family: 'Bebas Neue', cursive, sans-serif;
+    font-family: $font1;
     font-size: 1.5rem;
-    color: white;
+    color: $color6;
 }
 
 /* SECCION FOTOS */
@@ -473,12 +490,12 @@ font-size: 1.2rem;
 
 .grid__header3 {
     grid-area: header;
-    background-color: black;
+    background-color:$color1;
 }
 
 .grid__nav3 {
     grid-area: nav;
-    background-color:#3c3c3c;
+    background-color:$color2;
 }
 
 .grid__slider3 {
@@ -491,12 +508,12 @@ font-size: 1.2rem;
 
 .footer3 {
     grid-area: footer;
-    background-color: black;
+    background-color: $color1;
     @include display;
     flex-direction: column;
     p {
-        color: white;
-        font-family: 'Bebas Neue', cursive, sans-serif;
+        color: $color6;
+        font-family:$font1;
         font-size: 1.5rem;
     }
 }
@@ -511,8 +528,8 @@ font-size: 1.2rem;
 }
 
 .grid__nav3 li a {
-    color: white;
-    font-family: 'Bebas Neue', cursive, sans-serif;
+    color: $color6;
+    font-family: $font1;
     font-size: 2rem;
     padding: 0px 10px;
 }
@@ -602,13 +619,13 @@ font-size: 1.2rem;
 
 .grid__header4 {
     grid-area: header;
-    background-color: black;
+    background-color: $color1;
 
 }
 
 .grid__nav4 {
     grid-area: nav;
-    background-color:#3c3c3c;
+    background-color:$color2;
 }
 
 .grid__main4 {
@@ -637,7 +654,7 @@ font-size: 1.2rem;
 }
 .footer4 {
     grid-area: footer;
-    background-color: black;
+    background-color: $color1;
     @include display;
     flex-direction: column;
 }
@@ -645,19 +662,19 @@ font-size: 1.2rem;
 /* BARRA DE NAVEGACIÓN */
 
 .grid__nav4 li a:hover {
-    background-color: black;
+    background-color: $color1;
 
 }
 .grid__nav4 li a {
-    font-family: 'Bebas Neue', cursive, sans-serif;
+    font-family: $font1;
     font-size: 2rem;
     padding: 0px 10px;
-    color: white;
+    color: $color6;
 }
 
 .container__texto {
     h1 {
-        font-family: 'Bebas Neue', cursive, sans-serif;
+        font-family: $font1;
     }
 }
 /* MAIN */
@@ -745,7 +762,7 @@ height: auto;
         background: #000;
         margin-top: 15px;
         border-radius: 20px;
-        color: #fff;
+        color: $color6;
         font-size: 20px;
         
     }
@@ -754,9 +771,7 @@ height: auto;
         border-radius: 15px;
         object-fit: cover;
         object-position: center;
-        
-        
-        
+    
     }
 }
 
@@ -786,7 +801,7 @@ height: auto;
 .footer4 p {
     font-family: 'Bebas Neue', cursive, sans-serif;
     font-size: 1.5rem;
-    color: white;
+    color: $color6;
 }
 
 
@@ -803,12 +818,12 @@ height: auto;
 
 .grid__header5 {
     grid-area: header;
-    background-color: black;
+    background-color: $color1;
 }
 
 .grid__nav5 {
     grid-area: nav;
-    background-color:#3c3c3c;
+    background-color: $color2;
 
 }
 
@@ -821,14 +836,14 @@ height: auto;
     align-items: center;
     background-color: linen;
     h2, th, td {
-        font-family: 'Rajdhani', sans-serif;
+        font-family: $font2;
         font-weight: 600;
     }
 }
 
 .footer5 {
     grid-area: footer;
-    background-color: black;
+    background-color: $color1;
     @include display;
     flex-direction: column;
     
@@ -837,51 +852,20 @@ height: auto;
 /* NAV */
 
 .grid__nav5 li a:hover {
-    background-color: black;
+    background-color: $color1;
 
 }
 .grid__nav5 li a {
-    color: white;
-    font-family: 'Bebas Neue', cursive, sans-serif;
+    color: $color6;
+    font-family: $font1;
     font-size: 2rem;
     padding: 0px 10px;
 }
 
-/* TABLA */
-/* MODIFICADA CON BOOTSTRAP */
-/* .tabla {
-    border: 5px solid black;
-    margin: 10px;
-    border-collapse: collapse;
-    border-radius: 2px;
-    
-}
-
-.tabla td {
-    border: 1px solid black;
-    padding: 5px;
-}
-
-.tabla th {
-    padding: 8px;
-}
-
-.tabla tr:hover td {
-    background: dimgray;
-}
-
-tr:nth-child(even) {
-    background-color:#ddd;
-}
-
-.tabla th {
-    background-color: lightslategray;
-}*/
-
 .footer5 p {
-    font-family: 'Bebas Neue', cursive, sans-serif;
+    font-family: $font1;
     font-size: 1.5rem;
-    color: white;
+    color: $color6;
 }  
 
 .tablahyp h2 {
