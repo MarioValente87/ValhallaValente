@@ -328,6 +328,8 @@ main .container__texto {
 .layout__disciplinas {
   display: -ms-grid;
   display: grid;
+  overflow-x: hidden;
+  /* sin esta propiedad se genera barra de scroll horizontal por el efecto de que aparece desde fuera de la pantalla */
       grid-template-areas: "header header header header" "nav nav nav nav" "section1 section1 section1 section1" "section2 section2 section2 section2" "section3 section3 section3 section3" "section4 section4 section4 section4" "footer footer footer footer";
 }
 

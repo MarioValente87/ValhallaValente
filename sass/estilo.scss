@@ -8,8 +8,6 @@ $color-secundario:#3c3c3c;
     align-items: center;
 }
 
-
-
 .layout {
    
     display: grid;
@@ -265,6 +263,7 @@ font-size: 1.2rem;
 
 .layout__disciplinas {
     display: grid;
+    overflow-x: hidden; /* sin esta propiedad se genera barra de scroll horizontal por el efecto de que aparece desde fuera de la pantalla */
     grid-template-areas:
     "header header header header"
     "nav nav nav nav"
