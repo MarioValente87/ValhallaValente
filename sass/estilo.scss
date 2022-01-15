@@ -13,9 +13,7 @@ $color6: #fff;
 $font1: 'Bebas Neue', sans-serif;
 $font2: 'Rajdhani', sans-serif;
 
-*{
-    overflow-x: hidden;
-}
+
 /***********************MIXIN******************/
 
 @mixin shadow {
@@ -288,7 +286,8 @@ font-size: 1.2rem;
 .layout__disciplinas {
     display: grid;
     background-color: $color5;
-    overflow: hidden;
+    overflow-x: hidden;
+    
     grid-template-areas:
     "header header header header"
     "nav nav nav nav"
@@ -302,11 +301,15 @@ font-size: 1.2rem;
 .grid__header2 {
     grid-area: header;
     background-color:$color1;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .grid__nav2 {
     grid-area:nav;
     background-color: $color2;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 
@@ -315,13 +318,15 @@ font-size: 1.2rem;
     display: flex;
     padding: 5px 5px;
     @include shadow;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
     
 }
 .seccion1::before, .seccion2::before, .seccion3::before, .seccion4::before  {
     content: " ";
     position: absolute;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
     width: 150%;
     height: 80%;
     top: 0;
@@ -336,7 +341,8 @@ font-size: 1.2rem;
     inset: 4px;
     background: $color4;
     border: 16px;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 @keyframes animate {
@@ -356,7 +362,8 @@ font-size: 1.2rem;
         height: 80%;
         top: 0;
         right: -20rem;
-        overflow: hidden;
+        overflow-x: hidden;
+        overflow-y: hidden;
         
     }
     }
@@ -367,7 +374,8 @@ font-size: 1.2rem;
     display: flex;
     padding: 5px 5px;
     @include shadow;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .seccion3 {
@@ -375,7 +383,8 @@ font-size: 1.2rem;
     display: flex;
     padding: 5px 5px;
     @include shadow;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .seccion4 {
@@ -383,7 +392,8 @@ font-size: 1.2rem;
     display: flex;
     padding: 5px 5px;
     @include shadow;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
 
 }
 
@@ -393,6 +403,8 @@ font-size: 1.2rem;
     display: flex;
     @include display;
     flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: hidden;
     
 }
 

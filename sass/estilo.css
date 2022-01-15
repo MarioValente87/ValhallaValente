@@ -1,9 +1,5 @@
 @charset "UTF-8";
 /***********************VARIABLES******************/
-* {
-  overflow-x: hidden;
-}
-
 /***********************MIXIN******************/
 /***********************ESTILOS DEL PROYECTO******************/
 .layout {
@@ -333,7 +329,7 @@ main .container__texto {
   display: -ms-grid;
   display: grid;
   background-color: #b1b2c1;
-  overflow: hidden;
+  overflow-x: hidden;
       grid-template-areas: "header header header header" "nav nav nav nav" "section1 section1 section1 section1" "section2 section2 section2 section2" "section3 section3 section3 section3" "section4 section4 section4 section4" "footer footer footer footer";
 }
 
@@ -343,6 +339,8 @@ main .container__texto {
   -ms-grid-column-span: 3;
   grid-area: header;
   background-color: #000000;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .grid__nav2 {
@@ -351,6 +349,8 @@ main .container__texto {
   -ms-grid-column-span: 3;
   grid-area: nav;
   background-color: #1f2023;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .seccion1 {
@@ -367,13 +367,15 @@ main .container__texto {
   border: thin solid black;
   -webkit-box-shadow: 5px 5px 5px 5px #0005;
           box-shadow: 5px 5px 5px 5px #0005;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .seccion1::before, .seccion2::before, .seccion3::before, .seccion4::before {
   content: " ";
   position: absolute;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
   width: 150%;
   height: 80%;
   top: 0;
@@ -390,7 +392,8 @@ main .container__texto {
   inset: 4px;
   background: #7b7c87;
   border: 16px;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 @-webkit-keyframes animate {
@@ -422,7 +425,8 @@ main .container__texto {
     height: 80%;
     top: 0;
     right: -20rem;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
   }
 }
 
@@ -440,7 +444,8 @@ main .container__texto {
   border: thin solid black;
   -webkit-box-shadow: 5px 5px 5px 5px #0005;
           box-shadow: 5px 5px 5px 5px #0005;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .seccion3 {
@@ -457,7 +462,8 @@ main .container__texto {
   border: thin solid black;
   -webkit-box-shadow: 5px 5px 5px 5px #0005;
           box-shadow: 5px 5px 5px 5px #0005;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .seccion4 {
@@ -474,7 +480,8 @@ main .container__texto {
   border: thin solid black;
   -webkit-box-shadow: 5px 5px 5px 5px #0005;
           box-shadow: 5px 5px 5px 5px #0005;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .footer2 {
@@ -497,6 +504,8 @@ main .container__texto {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 /* BARRA DE NAVEGACIÓN */
