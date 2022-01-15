@@ -527,12 +527,6 @@ main .container__texto {
   .container__texto {
     font-family: "Rajdhani", sans-serif;
     font-weight: 600;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     text-align: center;
     width: 90%;
   }
@@ -540,38 +534,55 @@ main .container__texto {
     font-family: "Bebas Neue", sans-serif;
   }
   .container__imagen2 {
-    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .container__imagen2 img {
     max-width: 100%;
-    margin-bottom: 15px;
   }
 }
 
 /* fin mobile */
 .container__imagen2 {
-  margin: 0 50x;
-  -webkit-box-pack: baseline;
-      -ms-flex-pack: baseline;
-          justify-content: baseline;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
   z-index: 2;
 }
 
 .container__imagen2 img {
-  border-radius: 10px;
-  width: 130rem;
+  border-radius: 30px;
   padding: 10px 10px;
+  min-width: 100%;
 }
 
 .container__texto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 0 20px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
   z-index: 10;
   font-family: "Rajdhani", sans-serif;
   font-size: 1.05rem;
-  text-indent: 3rem;
   letter-spacing: 1px;
   line-height: 25px;
   font-weight: 600;
@@ -787,9 +798,9 @@ main .container__texto {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-color: #b1b2c1;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: 2em;
 }
 
 .grid__main4 .container__imagen2 {
@@ -799,6 +810,7 @@ main .container__texto {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-color: #4a4b52;
 }
 
 @media screen and (max-width: 764px) {
@@ -860,6 +872,7 @@ main .container__texto {
 
 .container__texto h1 {
   font-family: "Bebas Neue", sans-serif;
+  padding-top: 1rem;
 }
 
 /* MAIN */
@@ -1054,7 +1067,7 @@ main .container__texto {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: linen;
+  background-color: #b1b2c1;
 }
 
 .tablahyp h2, .tablahyp th, .tablahyp td {
