@@ -13,6 +13,9 @@ $color6: #fff;
 $font1: 'Bebas Neue', sans-serif;
 $font2: 'Rajdhani', sans-serif;
 
+*{
+    overflow-x: hidden;
+}
 /***********************MIXIN******************/
 
 @mixin shadow {
@@ -284,8 +287,8 @@ font-size: 1.2rem;
 
 .layout__disciplinas {
     display: grid;
-    overflow-x: hidden; /* sin esta propiedad se genera barra de scroll horizontal por el efecto de que aparece desde fuera de la pantalla */
     background-color: $color5;
+    overflow: hidden;
     grid-template-areas:
     "header header header header"
     "nav nav nav nav"
@@ -318,6 +321,7 @@ font-size: 1.2rem;
 .seccion1::before, .seccion2::before, .seccion3::before, .seccion4::before  {
     content: " ";
     position: absolute;
+    overflow: hidden;
     width: 150%;
     height: 80%;
     top: 0;
@@ -332,6 +336,7 @@ font-size: 1.2rem;
     inset: 4px;
     background: $color4;
     border: 16px;
+    overflow: hidden;
 }
 
 @keyframes animate {
@@ -351,6 +356,7 @@ font-size: 1.2rem;
         height: 80%;
         top: 0;
         right: -20rem;
+        overflow: hidden;
         
     }
     }
@@ -387,6 +393,7 @@ font-size: 1.2rem;
     display: flex;
     @include display;
     flex-direction: column;
+    
 }
 
 /* BARRA DE NAVEGACIÓN */
@@ -413,6 +420,8 @@ font-size: 1.2rem;
     display: flex;
     @include display;
     flex-direction: column;
+    
+    
     }
     .container {
         &__texto {
@@ -420,6 +429,7 @@ font-size: 1.2rem;
             font-weight: 600;
             text-align: center;
             width: 90%;
+            overflow: hidden;
             h2 {
                 font-family:$font1;
             }
@@ -431,8 +441,10 @@ font-size: 1.2rem;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            overflow: hidden;
             img {
                 max-width: 100%;
+                overflow: hidden;
                 }
             } 
     }
@@ -450,6 +462,7 @@ font-size: 1.2rem;
             border-radius: 30px;
             padding: 10px 10px;
             min-width: 100%;
+            
             }
         }
     &__texto {
@@ -462,8 +475,10 @@ font-size: 1.2rem;
         letter-spacing: 1px;
         line-height: 25px;
         font-weight: 600;
+        
         h2 {
             font-family: $font1;
+            
         }
     }
 }
@@ -472,6 +487,7 @@ font-size: 1.2rem;
     font-family: $font1;
     font-size: 1.5rem;
     color: $color6;
+    
 }
 
 /* SECCION FOTOS */

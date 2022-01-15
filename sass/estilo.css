@@ -1,5 +1,9 @@
 @charset "UTF-8";
 /***********************VARIABLES******************/
+* {
+  overflow-x: hidden;
+}
+
 /***********************MIXIN******************/
 /***********************ESTILOS DEL PROYECTO******************/
 .layout {
@@ -328,9 +332,8 @@ main .container__texto {
 .layout__disciplinas {
   display: -ms-grid;
   display: grid;
-  overflow-x: hidden;
-  /* sin esta propiedad se genera barra de scroll horizontal por el efecto de que aparece desde fuera de la pantalla */
   background-color: #b1b2c1;
+  overflow: hidden;
       grid-template-areas: "header header header header" "nav nav nav nav" "section1 section1 section1 section1" "section2 section2 section2 section2" "section3 section3 section3 section3" "section4 section4 section4 section4" "footer footer footer footer";
 }
 
@@ -370,6 +373,7 @@ main .container__texto {
 .seccion1::before, .seccion2::before, .seccion3::before, .seccion4::before {
   content: " ";
   position: absolute;
+  overflow: hidden;
   width: 150%;
   height: 80%;
   top: 0;
@@ -386,6 +390,7 @@ main .container__texto {
   inset: 4px;
   background: #7b7c87;
   border: 16px;
+  overflow: hidden;
 }
 
 @-webkit-keyframes animate {
@@ -417,6 +422,7 @@ main .container__texto {
     height: 80%;
     top: 0;
     right: -20rem;
+    overflow: hidden;
   }
 }
 
@@ -529,6 +535,7 @@ main .container__texto {
     font-weight: 600;
     text-align: center;
     width: 90%;
+    overflow: hidden;
   }
   .container__texto h2 {
     font-family: "Bebas Neue", sans-serif;
@@ -548,9 +555,11 @@ main .container__texto {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    overflow: hidden;
   }
   .container__imagen2 img {
     max-width: 100%;
+    overflow: hidden;
   }
 }
 
